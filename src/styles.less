@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import "mixins";
+
+// Import Modules
+//@import "modules/button";
+//@import "modules/navbar";
+//@import "modules/header";
+//@import "modules/section";
+//@import "modules/timeline";
+//@import "modules/contact";
+//@import "modules/footer";
+//@import "modules/cv";
+
+
+// Global Components
+
+body {
+  overflow-x: hidden;
+  .body-font;
+}
+
+
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+
+a {
+  color: @theme-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: darken(@theme-primary, 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .heading-font;
+  font-weight: 700;
+}
+
+.viewport-full-height {
+  min-height: 100vh;
+}
+
+.bg-light-gray {
+  background-color: @gray-lighter;
+}
+
+.bg-darkest-gray {
+  background-color: @gray-darker;
+}
+
+.text-muted {
+  color: @gray-light;
+  margin-left: 10px;
+}
+
+.text-primary {
+  color: @theme-primary;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+// Highlight Color Customization
+
+::-moz-selection {
+  text-shadow: none;
+  background: @theme-primary;
+}
+
+::selection {
+  text-shadow: none;
+  background: @theme-primary;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+//body {
+//  webkit-tap-highlight-color: @theme-primary;
+//}
+
+
+
+.margin-bottom-30 {
+
+  //border: 1px solid #9c9c9c;
+  margin-bottom: 30px;
+}
+
+.sub-separator {
+  width: 80%;
+}
+
+// Media Queries
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
